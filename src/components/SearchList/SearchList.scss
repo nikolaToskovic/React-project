@@ -1,0 +1,45 @@
+$gray: lightgray;
+$blue: #59abe3;
+
+
+
+.filter-list {
+  width: 500px;
+  height: 150px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 65px;
+  left: 450px;
+  z-index: 15;
+  background: white;
+  border: 1px solid $gray;
+}
+
+.filter-list li {
+  padding: 15px;
+  border-bottom: 1px solid $gray;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.filter-list li img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.filter-list li:hover {
+  background: $blue;
+  color: white;
+}
+
+
+
+/* RESPONSIVE */
+@media all and (max-width: 1000px) {
+   .filter-list {
+     top: 140px;
+     left: 50px;
+     width: 400px;
+   }
+}

@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Atma);
+
+
+h1.error {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-family: 'Atma', sans-serif;
+    font-size: 50px;
+    color: #e87e04;
+  }
+
+  img {
+    height: 80px;
+  }
+}

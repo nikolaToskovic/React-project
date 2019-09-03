@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Atma);
+
+header {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 0 5px #59abe3;
+  margin-bottom: 80px;
+}
+
+.header-inner {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: #e87e04;
+  font-family: 'Atma', sans-serif;
+  font-size: 40px;
+}
+
+.heading-wrapper img {
+  height: 70px;
+}
+
+.search-field {
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  background: url(https://cdn.pixabay.com/photo/2014/04/03/00/31/magnifying-glass-308581_960_720.png) center left/20px no-repeat;
+  background-origin: content-box;
+  padding: 10px;
+  text-indent: 30px;
+}
+
+
+
+/* RESPONSIVE */
+@media all and (max-width: 1000px) {
+   header {
+     height: 150px;
+
+     .header-inner {
+       width: 500px;
+       margin: auto;
+       flex-wrap: wrap;
+       justify-content: center;
+
+       .search-field {
+         width: 400px;
+       }
+     }
+   }
+}

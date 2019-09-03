@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Atma);
+
+@mixin flex {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+$orange: #e87e04;
+
+
+
+.movies {
+  margin-bottom: 100px;
+
+  h3 {
+  @include flex;
+  font-family: 'Atma', sans-serif;
+  font-size: 28px;
+  color: $orange;
+  }
+}
+
+.to-watch-wrapper {
+  @include flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  color: $orange;
+  cursor: pointer;
+
+  span {
+    font-family: 'Atma', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  img {
+  height: 30px;
+  }
+}
